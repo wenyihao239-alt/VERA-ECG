@@ -246,7 +246,7 @@ To enable fine-grained question answering and serial ECG comparison on ECG-QA us
 
 The 411 PTB-XL recordings without any diagnostic superclass are excluded from all supervised experiments, yielding 21,388 usable records. The ECG-QA train/test split has zero patient-ID overlap (9,100 vs. 2,444 patients); we assert this by joining every used \texttt{ecg\_id} to PTB-XL \texttt{patient\_id}. CPSC2018 uses the nine-class mapping distributed with the challenge. C0 is trained only on PTB-XL training data and applied to each CPSC fold without target labels, whereas C2/C3 additionally use unlabeled target-fold features (transductive adaptation). All macro scores are unweighted averages over classes with both positive and negative test cases; F1 uses a fixed 0.5 threshold and ECE uses 15 equal-width bins. Unless stated otherwise, results are single-run seed 42; multi-seed entries are marked mean $\pm$ standard deviation.
 
-\textbf{Implementation details.} Stage~1 A0-mV uses AdamW, learning rate $10^{-3}$, weight decay $10^{-2}$, batch 128, 100 epochs (patience 15), and mild augmentation; A1-Pre uses AdamW, learning rate $10^{-4}$, weight decay $0.05$, batch 32, 30 epochs (patience 8). Stage~2 and APEB use AdamW, learning rate $10^{-3}$, weight decay $10^{-2}$, batch 512, 100 epochs (patience 15); A8-OneWay uses $\lambda_{\text{logic}}=0.1$ and $\delta=0.1$. C0/C2/C3 linear heads use AdamW, learning rate $10^{-3}$, weight decay $10^{-4}$, batch 512, 100 epochs. PTB-XL arrays are 100 Hz. CPSC arrays are resampled from 500 Hz to 100 Hz with polyphase anti-aliasing (\texttt{resample\_poly}, ratio $1/5$); no additional $\mu$V-to-mV factor is applied because the released arrays are already mV-scale. Qwen uses LoRA $r=16$, $\alpha=32$, dropout 0.05, learning rate $2\times10^{-4}$, batch 1 with gradient accumulation 8, and max length 768 for one epoch (3,584 steps).'
+\textbf{Implementation details.} Stage~1 A0-mV uses AdamW, learning rate $10^{-3}$, weight decay $10^{-2}$, batch 128, 100 epochs (patience 15), and mild augmentation; A1-Pre uses AdamW, learning rate $10^{-4}$, weight decay $0.05$, batch 32, 30 epochs (patience 8). Stage~2 and APEB use AdamW, learning rate $10^{-3}$, weight decay $10^{-2}$, batch 512, 100 epochs (patience 15); A8-OneWay uses $\lambda_{\text{logic}}=0.1$ and $\delta=0.1$. C0/C2/C3 linear heads use AdamW, learning rate $10^{-3}$, weight decay $10^{-4}$, batch 512, 100 epochs. PTB-XL arrays are 100 Hz. CPSC arrays are resampled from 500 Hz to 100 Hz with polyphase anti-aliasing (\texttt{resample\_poly}, ratio $1/5$); no additional $\mu$V-to-mV factor is applied because the released arrays are already mV-scale. Qwen uses LoRA $r=16$, $\alpha=32$, dropout 0.05, learning rate $2\times10^{-4}$, batch 1 with gradient accumulation 8, and max length 768 for one epoch (3,584 steps).
 
 \begin{table}[htbp]
 \centering
@@ -570,6 +570,7 @@ This research did not receive any specific grant from funding agencies in the pu
 
 
 \n\end{document}\n
+
 
 
 
