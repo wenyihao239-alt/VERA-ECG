@@ -1,0 +1,1510 @@
+{
+  "n": 98,
+  "legacy_accuracy": 0.5714285714285714,
+  "latency_ms_per_sample": 166.97175203993612,
+  "set_em": 0.5102040816326531,
+  "set_f1": 0.5467687074829931,
+  "by_type": {
+    "single-verify": {
+      "n": 14,
+      "legacy_correct": 10,
+      "legacy_acc": 0.7142857142857143,
+      "set_em": 0.7142857142857143,
+      "set_f1": 0.7142857142857143
+    },
+    "single-choose": {
+      "n": 14,
+      "legacy_correct": 9,
+      "legacy_acc": 0.6428571428571429,
+      "set_em": 0.42857142857142855,
+      "set_f1": 0.5714285714285714
+    },
+    "single-query": {
+      "n": 14,
+      "legacy_correct": 8,
+      "legacy_acc": 0.5714285714285714,
+      "set_em": 0.5714285714285714,
+      "set_f1": 0.5714285714285714
+    },
+    "comparison_consecutive-verify": {
+      "n": 14,
+      "legacy_correct": 6,
+      "legacy_acc": 0.42857142857142855,
+      "set_em": 0.42857142857142855,
+      "set_f1": 0.42857142857142855
+    },
+    "comparison_consecutive-query": {
+      "n": 14,
+      "legacy_correct": 6,
+      "legacy_acc": 0.42857142857142855,
+      "set_em": 0.42857142857142855,
+      "set_f1": 0.42857142857142855
+    },
+    "comparison_irrelevant-verify": {
+      "n": 14,
+      "legacy_correct": 11,
+      "legacy_acc": 0.7857142857142857,
+      "set_em": 0.7857142857142857,
+      "set_f1": 0.7857142857142857
+    },
+    "comparison_irrelevant-query": {
+      "n": 14,
+      "legacy_correct": 6,
+      "legacy_acc": 0.42857142857142855,
+      "set_em": 0.21428571428571427,
+      "set_f1": 0.3273809523809524
+    }
+  },
+  "examples": [
+    {
+      "i": 0,
+      "question": "Does this ECG show baseline drift in lead I?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 1,
+      "question": "Does this ECG show right axis deviation?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 2,
+      "question": "Does this ECG show right axis deviation?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 3,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 4,
+      "question": "Does this ECG show baseline drift in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 5,
+      "question": "Does this ECG show any kind of abnormal symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 6,
+      "question": "Is this a normal ECG?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 7,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 8,
+      "question": "Does the rr interval of this ECG fall within the normal range?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 9,
+      "question": "Does this ECG show early stage of myocardial infarction?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 10,
+      "question": "Does this ECG show baseline drift?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 11,
+      "question": "Does this ECG show any kind of noises in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 12,
+      "question": "Does this ECG show any diagnostic symptoms, excluding uncertain symptoms?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 13,
+      "question": "Does the rr interval of this ECG fall within the normal range?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 14,
+      "question": "Which form-related symptom does this ECG show, non-diagnostic t abnormalities or low amplitude t-wave?",
+      "gold": [
+        "low amplitude t-wave",
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "low amplitude t wave",
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 15,
+      "question": "Which form-related symptom does this ECG show, non-specific st depression or non-diagnostic t abnormalities?",
+      "gold": [
+        "none"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 16,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or complete right bundle branch block, including uncertain symptoms?",
+      "gold": [
+        "complete right bundle branch block"
+      ],
+      "pred": "complete right bundle branch block",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "complete right bundle branch block"
+      ],
+      "gold_set": [
+        "complete right bundle branch block"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 17,
+      "question": "Which rhythm-related symptom does this ECG show, sinus tachycardia or sinus bradycardia?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 18,
+      "question": "Which range does the rr interval of this ECG fall in, below the normal range or within the normal range?",
+      "gold": [
+        "none"
+      ],
+      "pred": "below the normal range",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "below the normal range"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 19,
+      "question": "Which form-related symptom does this ECG show, non-diagnostic t abnormalities or ventricular premature complex?",
+      "gold": [
+        "non-diagnostic t abnormalities",
+        "ventricular premature complex"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities",
+        "ventricular premature complex"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 20,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or non-specific st changes, including uncertain symptoms?",
+      "gold": [
+        "non-specific st changes",
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities",
+        "non specific st changes"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 21,
+      "question": "Which form-related symptom does this ECG show, low amplitude t-wave or non-diagnostic t abnormalities?",
+      "gold": [
+        "low amplitude t-wave"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "low amplitude t wave"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 22,
+      "question": "Which form-related symptom does this ECG show, low amplitude t-wave or non-diagnostic t abnormalities?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 23,
+      "question": "Which range does the rr interval of this ECG fall in, below the normal range or above the normal range?",
+      "gold": [
+        "above the normal range"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "above the normal range"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 24,
+      "question": "Which diagnostic symptom does this ECG show, long qt-interval or non-diagnostic t abnormalities, including uncertain symptoms?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 25,
+      "question": "Which rhythm-related symptom does this ECG show, bigeminal pattern (unknown origin, supraventricular, or ventricular) or sinus rhythm?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 26,
+      "question": "Which rhythm-related symptom does this ECG show, sinus tachycardia or sinus rhythm?",
+      "gold": [
+        "sinus tachycardia"
+      ],
+      "pred": "sinus tachycardia",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "sinus tachycardia"
+      ],
+      "gold_set": [
+        "sinus tachycardia"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 27,
+      "question": "Which range does the pr interval of this ECG fall in, within the normal range or above the normal range?",
+      "gold": [
+        "within the normal range"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "within the normal range"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 28,
+      "question": "What rhythm-related symptoms does this ECG show?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "sinus rhythm",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "sinus rhythm"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 29,
+      "question": "What form-related symptoms does this ECG show in lead I?",
+      "gold": [
+        "none"
+      ],
+      "pred": "non-specific st depression",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non specific st depression"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 30,
+      "question": "What kind of noises does this ECG show in lead I?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 31,
+      "question": "What kind of extra systole does this ECG show?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 32,
+      "question": "What form-related symptoms does this ECG show?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 33,
+      "question": "What direction is this ECG deviated to?",
+      "gold": [
+        "right axis deviation"
+      ],
+      "pred": "right axis deviation",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "right axis deviation"
+      ],
+      "gold_set": [
+        "right axis deviation"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 34,
+      "question": "What kind of noises does this ECG show in lead I?",
+      "gold": [
+        "static noise"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "static noise"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 35,
+      "question": "What rhythm-related symptoms does this ECG show?",
+      "gold": [
+        "sinus tachycardia"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "sinus tachycardia"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 36,
+      "question": "What form-related symptoms does this ECG show?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 37,
+      "question": "What leads are showing baseline drift in this ECG?",
+      "gold": [
+        "lead V2"
+      ],
+      "pred": "lead V5",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "lead v5"
+      ],
+      "gold_set": [
+        "lead v2"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 38,
+      "question": "What form-related symptoms does this ECG show in lead I?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 39,
+      "question": "What numeric features of this ECG fall below the normal range?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 40,
+      "question": "What form-related symptoms does this ECG show in lead I?",
+      "gold": [
+        "none"
+      ],
+      "pred": "non-specific st depression",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non specific st depression"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 41,
+      "question": "What stage of infarction is this ECG at?",
+      "gold": [
+        "unknown stage of myocardial infarction"
+      ],
+      "pred": "middle stage of myocardial infarction",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "middle stage of myocardial infarction"
+      ],
+      "gold_set": [
+        "unknown stage of myocardial infarction"
+      ],
+      "type": "single-query"
+    },
+    {
+      "i": 42,
+      "question": "Compared to the previous tracing, has myocardial infarction in inferior leads been resolved in the recent tracing?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 43,
+      "question": "Compared to the previous tracing, does the rr interval still show an abnormal value in the recent tracing?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 44,
+      "question": "Compared to the previous tracing, does non-diagnostic t abnormalities still remain in the recent tracing?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 45,
+      "question": "Compared to the previous tracing, is non-diagnostic t abnormalities still not found in the recent tracing?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 46,
+      "question": "Compared to the previous tracing, has non-specific st changes been newly detected in the recent tracing?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 47,
+      "question": "Compared to the previous tracing, is the rr interval still considered normal in the recent tracing?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 48,
+      "question": "Compared to the previous tracing, has the p duration of the recent tracing become normal?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 49,
+      "question": "Compared to the previous tracing, has myocardial infarction in inferior leads been resolved in the recent tracing?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 50,
+      "question": "Compared to the previous tracing, has the pr interval of the recent tracing changed to an abnormal value?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 51,
+      "question": "Compared to the previous tracing, has the p duration of the recent tracing changed to an abnormal value?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 52,
+      "question": "Compared to the previous tracing, is long qt-interval still not found in the recent tracing?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 53,
+      "question": "Compared to the previous tracing, has the pr interval of the recent tracing become normal?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 54,
+      "question": "Compared to the previous tracing, has the rr interval of the recent tracing become normal?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 55,
+      "question": "Compared to the previous tracing, has myocardial infarction in anteroseptal leads been resolved in the recent tracing?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_consecutive-verify"
+    },
+    {
+      "i": 56,
+      "question": "What numeric features of the recent tracing are now considered abnormal values compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 57,
+      "question": "What numeric features of the recent tracing now have become normal compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 58,
+      "question": "What symptoms are newly detected in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "sinus arrhythmia",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "sinus arrhythmia"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 59,
+      "question": "What numeric features of the recent tracing now have become normal compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 60,
+      "question": "What numeric features of the recent tracing are now considered abnormal values compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 61,
+      "question": "What symptoms still remain in the recent tracing as compared to the previous one?",
+      "gold": [
+        "complete left bundle branch block",
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "complete left bundle branch block",
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 62,
+      "question": "What numeric features of the recent tracing are still abnormal compared to the previous one?",
+      "gold": [
+        "qrs duration",
+        "qt interval"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "qrs duration",
+        "qt interval"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 63,
+      "question": "What numeric features of the recent tracing are still abnormal compared to the previous one?",
+      "gold": [
+        "qrs duration"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "qrs duration"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 64,
+      "question": "What symptoms still remain in the recent tracing as compared to the previous one?",
+      "gold": [
+        "left posterior fascicular block"
+      ],
+      "pred": "sinus rhythm",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "sinus rhythm"
+      ],
+      "gold_set": [
+        "left posterior fascicular block"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 65,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 66,
+      "question": "What numeric features of the recent tracing now have become normal compared to the previous one?",
+      "gold": [
+        "pr interval"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "pr interval"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 67,
+      "question": "What numeric features of the recent tracing are still abnormal compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 68,
+      "question": "What symptoms are newly detected in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "non-specific st changes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non specific st changes"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 69,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "first degree av block"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "first degree av block"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 70,
+      "question": "Compared to the first ECG, has non-specific st changes been resolved in the second ECG?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 71,
+      "question": "Compared to the first ECG, does the rr interval still show an abnormal value in the second ECG?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 72,
+      "question": "Compared to the first ECG, does non-diagnostic t abnormalities still remain in the second ECG?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 73,
+      "question": "Compared to the first ECG, is non-diagnostic t abnormalities still not found in the second ECG?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 74,
+      "question": "Compared to the first ECG, has non-specific st changes been newly detected in the second ECG?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 75,
+      "question": "Compared to the first ECG, is the rr interval still normal in the second ECG?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 76,
+      "question": "Compared to the first ECG, has the p duration of the second ECG become normal?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 77,
+      "question": "Compared to the first ECG, has non-specific st changes been resolved in the second ECG?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 78,
+      "question": "Compared to the first ECG, has the pr interval of the second ECG changed to an abnormal value?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_irrelevant-verify"
+    },
+    {
+      "i": 79,
+      "question": "Compared to the first ECG, has the p duration of the second ECG changed to an abnormal value?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "comparison_irrelevant-verify"
+    }
+  ]
+}

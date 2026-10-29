@@ -1,0 +1,16 @@
+﻿numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+torch==2.14.0
+torchvision==0.29.0
+transformers==5.20.2
+peft==0.21.2
+accelerate==1.15.0
+datasets==5.1.0
+trl==1.16.0
+bitsandbytes==0.50.2
+wfdb==4.3.1
+neurokit2==0.2.13
+matplotlib==3.11.2
+Pillow==12.0.0

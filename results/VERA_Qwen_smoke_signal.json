@@ -1,0 +1,54 @@
+{
+  "n": 2,
+  "legacy_accuracy": 0.0,
+  "latency_ms_per_sample": 1071.9641499454156,
+  "set_em": 0.0,
+  "set_f1": 0.0,
+  "by_type": {
+    "single-verify": {
+      "n": 2,
+      "legacy_correct": 0,
+      "legacy_acc": 0.0,
+      "set_em": 0.0,
+      "set_f1": 0.0
+    }
+  },
+  "examples": [
+    {
+      "i": 0,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "I'm unable to interpret the ECG based solely on the text \"ECG",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "i m unable to interpret the ecg based solely on the text ecg"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 1,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "The provided ECG image is not clear or legible, as evidenced by the",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "the provided ecg image is not clear or legible as evidenced by the"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "n": 1,
+  "legacy_accuracy": 1.0,
+  "set_em": 1.0,
+  "set_f1": 1.0,
+  "by_type": {
+    "single-choose": {
+      "n": 1,
+      "legacy_correct": 1,
+      "legacy_acc": 1.0,
+      "set_em": 1.0,
+      "set_f1": 1.0
+    }
+  },
+  "examples": [
+    {
+      "i": 0,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or myocardial infarction in inferior leads, including uncertain symptoms?",
+      "gold": [
+        "myocardial infarction in inferior leads"
+      ],
+      "pred": "myocardial infarction in inferior leads",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "myocardial infarction in inferior leads"
+      ],
+      "gold_set": [
+        "myocardial infarction in inferior leads"
+      ],
+      "type": "single-choose"
+    }
+  ]
+}

@@ -1,0 +1,1500 @@
+{
+  "n": 6330,
+  "legacy_accuracy": 0.5627172195892575,
+  "latency_ms_per_sample": 57.70330296970586,
+  "set_em": 0.5466034755134281,
+  "set_f1": 0.555030216404624,
+  "by_type": {
+    "single-verify": {
+      "n": 1367,
+      "legacy_correct": 906,
+      "legacy_acc": 0.6627651792245793,
+      "set_em": 0.6627651792245793,
+      "set_f1": 0.6627651792245793
+    },
+    "single-choose": {
+      "n": 763,
+      "legacy_correct": 304,
+      "legacy_acc": 0.3984272608125819,
+      "set_em": 0.3328964613368283,
+      "set_f1": 0.3765836609873306
+    },
+    "single-query": {
+      "n": 1400,
+      "legacy_correct": 772,
+      "legacy_acc": 0.5514285714285714,
+      "set_em": 0.5157142857142857,
+      "set_f1": 0.5291723356009069
+    },
+    "comparison_consecutive-verify": {
+      "n": 800,
+      "legacy_correct": 508,
+      "legacy_acc": 0.635,
+      "set_em": 0.635,
+      "set_f1": 0.635
+    },
+    "comparison_consecutive-query": {
+      "n": 600,
+      "legacy_correct": 260,
+      "legacy_acc": 0.43333333333333335,
+      "set_em": 0.43,
+      "set_f1": 0.43194444444444446
+    },
+    "comparison_irrelevant-verify": {
+      "n": 800,
+      "legacy_correct": 517,
+      "legacy_acc": 0.64625,
+      "set_em": 0.64625,
+      "set_f1": 0.64625
+    },
+    "comparison_irrelevant-query": {
+      "n": 600,
+      "legacy_correct": 295,
+      "legacy_acc": 0.49166666666666664,
+      "set_em": 0.49166666666666664,
+      "set_f1": 0.49166666666666664
+    }
+  },
+  "examples": [
+    {
+      "i": 0,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 1,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 2,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 3,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 4,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 5,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 6,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 7,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 8,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 9,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 10,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 11,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 12,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 13,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 14,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 15,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 16,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 17,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 18,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 19,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 20,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "not sure"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "not sure"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 21,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 22,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 23,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 24,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 25,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 26,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 27,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 28,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 29,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 30,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 31,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 32,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 33,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 34,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 35,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 36,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 37,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 38,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 39,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 40,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 41,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 42,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 43,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 44,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 45,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 46,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 47,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 48,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 49,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 50,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 51,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 52,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 53,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 54,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 55,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 56,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 57,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 58,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 59,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 60,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 61,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 62,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 63,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 64,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 65,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 66,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 67,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 68,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 69,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 70,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 71,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 72,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 73,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 74,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 75,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 76,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 77,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 78,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 79,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    }
+  ]
+}

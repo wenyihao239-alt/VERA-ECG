@@ -1,0 +1,22 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\signature{Yihao Wen, on behalf of all authors\\Taiyuan University of Technology\\wenyihao239@gmail.com}
+\address{Taiyuan University of Technology\\79 Yingze West Street\\Taiyuan 030024, Shanxi, China}
+\begin{document}
+\begin{letter}{Editor-in-Chief\\Computers in Biology and Medicine}
+
+\opening{Dear Editor,}
+
+We submit the manuscript entitled \textit{``VERA-ECG: Verifiable Evidential Reasoning and Anatomy-Grounded Multimodal Framework for Reliable 12-Lead ECG Interpretation''} for consideration as an Original Research Article in \textit{Computers in Biology and Medicine}.
+
+The manuscript addresses four practical barriers in ECG multimodal learning: asymmetric sensor/image degradation, non-random interval missingness, loss of physical millivolt scale during cross-center transfer, and unsupported LLM answers. The main contributions are: (i) a multi-label Beta-evidential fusion formulation with an explicit accuracy--controllability trade-off; (ii) an anatomy-grouped presence-gated evidence bottleneck; (iii) a one-way logic constraint that preserves diagnostic performance while improving diagnostic--evidence consistency; and (iv) a full-data ablation of soft tokens and hard symbolic anchors in a 3B ECG-QA model.
+
+We report full-data retrained ablations rather than inference-time substitutions: removing the hard anchor lowers legacy EM from 63.63\% to 56.27\%, while a signal-only model reaches 55.20\%. We also report same-fold cross-center comparisons, patient-overlap checks for ECG-QA, confidence intervals, and explicit limitations, including the weak open-ended longitudinal-query result and the absence of a clinician reader study.
+
+This work has not been published previously and is not under consideration elsewhere. All authors have approved the manuscript and agree with its submission. The authors declare no competing interests. All datasets are public and de-identified; no new human or animal experiments were performed. Code, split definitions, and evaluation scripts will be released in a public repository upon acceptance; an anonymized review link will be provided in the Editorial Manager submission.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

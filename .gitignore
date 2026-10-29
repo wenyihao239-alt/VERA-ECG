@@ -1,0 +1,15 @@
+﻿data/
+runs/
+runs_*/
+mydownload/
+pretrained/
+logs/
+server/
+third_party/
+*.pt
+*.pth
+*.npy
+*.npz
+*.safetensors
+__pycache__/
+*.pyc

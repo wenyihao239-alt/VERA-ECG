@@ -1,0 +1,13 @@
+﻿name: "VERA-ECG"
+title: "VERA-ECG: Verifiable Evidential Reasoning and Anatomy-Grounded Multimodal Framework for Reliable 12-Lead ECG Interpretation"
+authors:
+  - family-names: "Wen"
+    given-names: "Yihao"
+    email: "wenyihao239@gmail.com"
+    affiliation: "Taiyuan University of Technology"
+  - family-names: "Zeng"
+    given-names: "Jun"
+    email: "zeng.cqupt@gmail.com"
+    affiliation: "Chongqing University of Posts and Telecommunications"
+version: "1.0.0"
+date-released: "2026-10-29"

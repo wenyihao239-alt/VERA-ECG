@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\title{Supplementary Material for\\VERA-ECG: Verifiable Evidential Reasoning and Anatomy-Grounded Multimodal Framework for Reliable 12-Lead ECG Interpretation}
+\author{Yihao Wen, Jun Zeng}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Implementation details}
+\begin{table}[h]
+\centering
+\caption{Training and evaluation settings.}
+\begin{tabular}{ll}
+\toprule
+Item & Setting \\
+\midrule
+Framework & PyTorch 2.14, CUDA 13.0, Python 3.14 \\
+GPU & NVIDIA RTX 4060 Ti, 16 GB \\
+A0-mV & AdamW, lr $10^{-3}$, wd $10^{-2}$, batch 128, 100 epochs, patience 15 \\
+A1-Pre & AdamW, lr $10^{-4}$, wd $0.05$, batch 32, 30 epochs, patience 8 \\
+Stage 2 / APEB & AdamW, lr $10^{-3}$, wd $10^{-2}$, batch 512, 100 epochs, patience 15 \\
+A8-OneWay & $\lambda_{\text{logic}}=0.1$, $\delta=0.1$, stop-gradient on diagnosis \\
+C0/C2/C3 heads & AdamW, lr $10^{-3}$, wd $10^{-4}$, batch 512, 100 epochs \\
+Qwen SFT & LoRA $r=16$, $\alpha=32$, dropout 0.05, lr $2\times10^{-4}$ \\
+Qwen batching & batch 1, gradient accumulation 8, max length 768, 1 epoch = 3,584 steps \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{CPSC2018 preprocessing}
+CPSC2018 waveforms were resampled from 500 Hz to 100 Hz with polyphase anti-aliasing using \texttt{scipy.signal.resample\_poly(x, 1, 5, axis=1)}. No additional $\mu$V-to-mV factor was applied because the released arrays used in this study were already mV-scale (range approximately $-4$ to $+3$). Records shorter than 1,000 samples were zero-padded; longer records were center-cropped to 1,000 samples. PTB-XL arrays were used at 100 Hz. Per-lead z-score normalization was applied except for the mV-statistics branch, which receives the 36-dimensional global voltage descriptor before normalization.
+
+\section{A8-OneWay logic weights}
+\begin{table}[h]
+\centering
+\caption{A8-OneWay and bidirectional A8 weight sweep (seed 42).}
+\begin{tabular}{llccccc}
+\toprule
+Mode & $\lambda_{\text{logic}}$ & AUC & AP & F1 & Contradiction & Group F1 \\
+\midrule
+A8-OneWay & 0.00 & 0.9211 & 0.8114 & 0.7365 & 0.88\% & 0.5353 \\
+A8-OneWay & 0.05 & 0.9211 & 0.8114 & 0.7365 & 0.79\% & 0.5347 \\
+A8-OneWay & 0.10 & 0.9211 & 0.8114 & 0.7365 & 0.79\% & 0.5347 \\
+A8-OneWay & 0.20 & 0.9211 & 0.8114 & 0.7365 & 0.79\% & 0.5348 \\
+A8 (bidirectional) & 0.05 & 0.9198 & 0.8074 & 0.7346 & 0.88\% & 0.5384 \\
+A8 (bidirectional) & 0.10 & 0.9198 & 0.8072 & 0.7359 & 0.74\% & 0.5375 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The B2/B3 auxiliary validity and bucket heads were not trained; their contradiction and validity values are therefore not used as baselines. A7 (full APEB without logic loss) reaches 0.88\% contradiction, and A8-OneWay reaches 0.68\% (three-seed mean).
+
+\section{HE-DVR full-data ablations}
+All variants were retrained for one full epoch (28,672 training pairs, 3,584 steps) and evaluated on all 6,330 ECG-QA test questions.
+
+\begin{table}[h]
+\centering
+\caption{Full-data retrained HE-DVR ablations.}
+\begin{tabular}{lccc}
+\toprule
+Variant & Legacy EM & Set EM & Set F1 \\
+\midrule
+Full (soft A/B/D + hard anchor) & \textbf{63.63} & \textbf{59.83} & \textbf{61.99} \\
+No hard anchor & 56.27 & 54.66 & 55.50 \\
+No image soft tokens (anchor retained) & 62.76 & 58.74 & 61.12 \\
+Signal-only (no image, no anchor) & 55.20 & 53.03 & 54.37 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Cross-center details}
+C0 is trained only on PTB-XL training labels and applied to each CPSC fold without target labels or target statistics. C2/C3 use unlabeled CPSC fold features; they are transductive adaptation, not pure zero-shot transfer. Temperature $T=2.507$ is fitted on the PTB-XL validation split. Few-shot experiments use only Fold~0 training labels and test Fold~0 records. The public CPSC folds provide filenames but no patient identifiers; only fold-level separation can be asserted.
+
+C0 fold AUCs: 0.9080, 0.9092, 0.9091, 0.9071, 0.9185 (mean $0.9104 \pm 0.0041$). The same-fold Fold~0 comparison is Old A0 0.8603 vs. C0 0.9080 ($+4.77$ pp).
+
+\section{Uncertainty and confidence intervals}
+TMC clean test uncertainty predicts sample-level error with AUROC 0.738 (95\% bootstrap CI [0.717, 0.760]); error at 10\% coverage is 5.1\%, and at full coverage 38.2\%. The A8-OneWay contradiction rate at seed 42 is 0.79\% (95\% bootstrap CI [0.46\%, 1.16\%]). The counterfactual CSR is 7.12 (95\% CI [4.20, 24.38]) in probability space and 8.70 (95\% CI [6.01, 15.99]) in logit space. ECG-QA full Set EM is 59.83\% (95\% Wilson CI [58.62\%, 61.03\%]).
+
+\section{Data and code availability}
+All datasets are public and de-identified: PTB-XL, CPSC2018, and ECG-QA. The ECG-QA train/test split has zero patient-ID overlap (9,100 vs. 2,444 patients). Code, split definitions, and evaluation scripts will be released in a public repository upon acceptance; an anonymized review link will be provided in Editorial Manager.
+
+\end{document}

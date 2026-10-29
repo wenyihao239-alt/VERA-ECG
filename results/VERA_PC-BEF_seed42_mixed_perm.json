@@ -1,0 +1,54 @@
+{
+  "pairs": [
+    [
+      "clean",
+      "clean"
+    ],
+    [
+      "noise10",
+      "clean"
+    ],
+    [
+      "baseline03",
+      "clean"
+    ],
+    [
+      "leaddrop3",
+      "clean"
+    ],
+    [
+      "clean",
+      "blur2"
+    ],
+    [
+      "clean",
+      "crop10"
+    ],
+    [
+      "clean",
+      "jpeg30"
+    ],
+    [
+      "noise10",
+      "blur2"
+    ],
+    [
+      "baseline03",
+      "crop10"
+    ],
+    [
+      "leaddrop3",
+      "jpeg30"
+    ]
+  ],
+  "n": 21580,
+  "clean_mixed_auc": 0.9013174866546887,
+  "q_perm_mean": 0.8855802937130942,
+  "q_perm_std": 0.0007296120600302919,
+  "q_perm_delta": 0.01573719294159448,
+  "gamma_perm_mean": 0.88558029424111,
+  "gamma_perm_std": 0.0007296117357745872,
+  "gamma_perm_delta": 0.015737192413578738,
+  "gamma_s_mean": 0.5192142128944397,
+  "gamma_i_mean": 0.516040563583374
+}

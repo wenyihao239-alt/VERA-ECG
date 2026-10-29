@@ -1,0 +1,1457 @@
+{
+  "n": 600,
+  "legacy_accuracy": 0.38666666666666666,
+  "set_em": 0.37166666666666665,
+  "set_f1": 0.3816666666666666,
+  "by_type": {
+    "comparison_consecutive-query": {
+      "n": 600,
+      "legacy_correct": 232,
+      "legacy_acc": 0.38666666666666666,
+      "set_em": 0.37166666666666665,
+      "set_f1": 0.3816666666666666
+    }
+  },
+  "examples": [
+    {
+      "i": 0,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 1,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 2,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 3,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 4,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 5,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 6,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 7,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 8,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 9,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 10,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 11,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 12,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 13,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 14,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 15,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 16,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 17,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 18,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 19,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 20,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 21,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "sinus rhythm"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "sinus rhythm"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 22,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 23,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 24,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 25,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 26,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 27,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 28,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 29,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 30,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 31,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "myocardial infarction in inferior leads",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "myocardial infarction in inferior leads"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 32,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 33,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 34,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 35,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 36,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 37,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 38,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 39,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 40,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 41,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 42,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 43,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 44,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 45,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 46,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 47,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 48,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 49,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 50,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 51,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 52,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 53,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 54,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 55,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 56,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 57,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 58,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 59,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 60,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 61,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 62,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 63,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 64,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 65,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 66,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 67,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 68,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 69,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 70,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 71,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 72,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 73,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 74,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 75,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 76,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 77,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 78,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    },
+    {
+      "i": 79,
+      "question": "What symptoms have been resolved in the recent tracing as compared to the previous one?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "atrial fibrillation",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "atrial fibrillation"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "comparison_consecutive-query"
+    }
+  ]
+}

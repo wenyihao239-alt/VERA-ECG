@@ -1,0 +1,1515 @@
+{
+  "n": 350,
+  "legacy_accuracy": 0.6057142857142858,
+  "set_em": 0.5628571428571428,
+  "set_f1": 0.5878095238095237,
+  "by_type": {
+    "single-verify": {
+      "n": 50,
+      "legacy_correct": 32,
+      "legacy_acc": 0.64,
+      "set_em": 0.64,
+      "set_f1": 0.64
+    },
+    "single-choose": {
+      "n": 50,
+      "legacy_correct": 31,
+      "legacy_acc": 0.62,
+      "set_em": 0.46,
+      "set_f1": 0.5666666666666668
+    },
+    "single-query": {
+      "n": 50,
+      "legacy_correct": 25,
+      "legacy_acc": 0.5,
+      "set_em": 0.5,
+      "set_f1": 0.5
+    },
+    "comparison_consecutive-verify": {
+      "n": 50,
+      "legacy_correct": 34,
+      "legacy_acc": 0.68,
+      "set_em": 0.68,
+      "set_f1": 0.68
+    },
+    "comparison_consecutive-query": {
+      "n": 50,
+      "legacy_correct": 21,
+      "legacy_acc": 0.42,
+      "set_em": 0.42,
+      "set_f1": 0.42
+    },
+    "comparison_irrelevant-verify": {
+      "n": 50,
+      "legacy_correct": 40,
+      "legacy_acc": 0.8,
+      "set_em": 0.8,
+      "set_f1": 0.8
+    },
+    "comparison_irrelevant-query": {
+      "n": 50,
+      "legacy_correct": 29,
+      "legacy_acc": 0.58,
+      "set_em": 0.44,
+      "set_f1": 0.508
+    }
+  },
+  "examples": [
+    {
+      "i": 0,
+      "question": "Does this ECG show baseline drift in lead I?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 1,
+      "question": "Does this ECG show right axis deviation?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 2,
+      "question": "Does this ECG show right axis deviation?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 3,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 4,
+      "question": "Does this ECG show baseline drift in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 5,
+      "question": "Does this ECG show any kind of abnormal symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 6,
+      "question": "Is this a normal ECG?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 7,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 8,
+      "question": "Does the rr interval of this ECG fall within the normal range?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 9,
+      "question": "Does this ECG show early stage of myocardial infarction?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 10,
+      "question": "Does this ECG show baseline drift?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 11,
+      "question": "Does this ECG show any kind of noises in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 12,
+      "question": "Does this ECG show any diagnostic symptoms, excluding uncertain symptoms?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 13,
+      "question": "Does the rr interval of this ECG fall within the normal range?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 14,
+      "question": "Does this ECG show any kind of extra systoles?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 15,
+      "question": "Does this ECG show any kind of noises in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 16,
+      "question": "Does this ECG show baseline drift?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 17,
+      "question": "Does this ECG show static noise?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 18,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 19,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 20,
+      "question": "Does this ECG show early stage of myocardial infarction?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 21,
+      "question": "Does this ECG show static noise?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 22,
+      "question": "Does this ECG show ventricular extrasystoles?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 23,
+      "question": "Does this ECG show any form-related symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 24,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 25,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 26,
+      "question": "Does this ECG show middle stage of myocardial infarction?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 27,
+      "question": "Does this ECG show any kind of extra systoles?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 28,
+      "question": "Does this ECG show any kind of noises in lead II?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 29,
+      "question": "Does this ECG show early stage of myocardial infarction?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 30,
+      "question": "Does this ECG show symptoms of non-specific st changes?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 31,
+      "question": "Does this ECG show any kind of noises in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 32,
+      "question": "Does this ECG show early stage of myocardial infarction?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 33,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities in lead II?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 34,
+      "question": "Does this ECG show baseline drift?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 35,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 36,
+      "question": "Does this ECG show right axis deviation?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 37,
+      "question": "Does this ECG show any diagnostic symptoms, including uncertain symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 38,
+      "question": "Does this ECG show any kind of abnormal symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 39,
+      "question": "Does this ECG show baseline drift?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 40,
+      "question": "Does this ECG show early stage of myocardial infarction?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 41,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities in lead I?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 42,
+      "question": "Does this ECG show any kind of abnormal symptoms?",
+      "gold": [
+        "no"
+      ],
+      "pred": "no",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 43,
+      "question": "Does this ECG show symptoms of non-diagnostic t abnormalities in lead II?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 44,
+      "question": "Does this ECG show any kind of noises in lead II?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "yes",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 45,
+      "question": "Does this ECG show static noise?",
+      "gold": [
+        "no"
+      ],
+      "pred": "yes",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "yes"
+      ],
+      "gold_set": [
+        "no"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 46,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 47,
+      "question": "Does this ECG show extrasystoles?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 48,
+      "question": "Does this ECG show static noise?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 49,
+      "question": "Does this ECG show any rhythm-related symptoms?",
+      "gold": [
+        "yes"
+      ],
+      "pred": "no",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "no"
+      ],
+      "gold_set": [
+        "yes"
+      ],
+      "type": "single-verify"
+    },
+    {
+      "i": 50,
+      "question": "Which form-related symptom does this ECG show, non-diagnostic t abnormalities or low amplitude t-wave?",
+      "gold": [
+        "low amplitude t-wave",
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "low amplitude t wave",
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 51,
+      "question": "Which form-related symptom does this ECG show, non-specific st depression or non-diagnostic t abnormalities?",
+      "gold": [
+        "none"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 52,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or complete right bundle branch block, including uncertain symptoms?",
+      "gold": [
+        "complete right bundle branch block"
+      ],
+      "pred": "complete right bundle branch block",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "complete right bundle branch block"
+      ],
+      "gold_set": [
+        "complete right bundle branch block"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 53,
+      "question": "Which rhythm-related symptom does this ECG show, sinus tachycardia or sinus bradycardia?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 54,
+      "question": "Which range does the rr interval of this ECG fall in, below the normal range or within the normal range?",
+      "gold": [
+        "none"
+      ],
+      "pred": "below the normal range",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "below the normal range"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 55,
+      "question": "Which form-related symptom does this ECG show, non-diagnostic t abnormalities or ventricular premature complex?",
+      "gold": [
+        "non-diagnostic t abnormalities",
+        "ventricular premature complex"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities",
+        "ventricular premature complex"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 56,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or non-specific st changes, including uncertain symptoms?",
+      "gold": [
+        "non-specific st changes",
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities",
+        "non specific st changes"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 57,
+      "question": "Which form-related symptom does this ECG show, low amplitude t-wave or non-diagnostic t abnormalities?",
+      "gold": [
+        "low amplitude t-wave"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "low amplitude t wave"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 58,
+      "question": "Which form-related symptom does this ECG show, low amplitude t-wave or non-diagnostic t abnormalities?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 59,
+      "question": "Which range does the rr interval of this ECG fall in, below the normal range or above the normal range?",
+      "gold": [
+        "above the normal range"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "above the normal range"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 60,
+      "question": "Which diagnostic symptom does this ECG show, long qt-interval or non-diagnostic t abnormalities, including uncertain symptoms?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 61,
+      "question": "Which rhythm-related symptom does this ECG show, bigeminal pattern (unknown origin, supraventricular, or ventricular) or sinus rhythm?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 62,
+      "question": "Which rhythm-related symptom does this ECG show, sinus tachycardia or sinus rhythm?",
+      "gold": [
+        "sinus tachycardia"
+      ],
+      "pred": "sinus tachycardia",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "sinus tachycardia"
+      ],
+      "gold_set": [
+        "sinus tachycardia"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 63,
+      "question": "Which range does the pr interval of this ECG fall in, within the normal range or above the normal range?",
+      "gold": [
+        "within the normal range"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "within the normal range"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 64,
+      "question": "Which noise does this ECG show in lead aVF, baseline drift or static noise?",
+      "gold": [
+        "baseline drift"
+      ],
+      "pred": "baseline drift; static noise",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "baseline drift",
+        "static noise"
+      ],
+      "gold_set": [
+        "baseline drift"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 65,
+      "question": "Which diagnostic symptom does this ECG show, left ventricular hypertrophy or non-diagnostic t abnormalities, including uncertain symptoms?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 66,
+      "question": "Which range does the qt interval of this ECG fall in, within the normal range or above the normal range?",
+      "gold": [
+        "above the normal range"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "above the normal range"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 67,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or left anterior fascicular block, including uncertain symptoms?",
+      "gold": [
+        "left anterior fascicular block"
+      ],
+      "pred": "left anterior fascicular block",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "left anterior fascicular block"
+      ],
+      "gold_set": [
+        "left anterior fascicular block"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 68,
+      "question": "Which noise does this ECG show in lead V3, baseline drift or static noise?",
+      "gold": [
+        "baseline drift",
+        "static noise"
+      ],
+      "pred": "baseline drift; static noise",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "baseline drift",
+        "static noise"
+      ],
+      "gold_set": [
+        "baseline drift",
+        "static noise"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 69,
+      "question": "Which noise does this ECG show in lead aVR, static noise or baseline drift?",
+      "gold": [
+        "static noise",
+        "baseline drift"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "baseline drift",
+        "static noise"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 70,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or non-specific st changes, excluding uncertain symptoms?",
+      "gold": [
+        "non-specific st changes",
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities",
+        "non specific st changes"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 71,
+      "question": "Which noise does this ECG show in lead V6, static noise or baseline drift?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 72,
+      "question": "Which diagnostic symptom does this ECG show, digitalis effect or non-diagnostic t abnormalities, including uncertain symptoms?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "digitalis effect",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "digitalis effect"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 73,
+      "question": "Which form-related symptom does this ECG show, non-diagnostic t abnormalities or non-specific st depression?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 74,
+      "question": "Which diagnostic symptom does this ECG show, non-diagnostic t abnormalities or ischemic in anterolateral leads, excluding uncertain symptoms?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "non-diagnostic t abnormalities",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 75,
+      "question": "Which noise does this ECG show in lead V5, static noise or baseline drift?",
+      "gold": [
+        "static noise"
+      ],
+      "pred": "none",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "static noise"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 76,
+      "question": "Which diagnostic symptom does this ECG show, ischemic in anterolateral leads or non-diagnostic t abnormalities, excluding uncertain symptoms?",
+      "gold": [
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "ischemic in anterolateral leads",
+      "correct": false,
+      "set_em": 0.0,
+      "set_f1": 0.0,
+      "pred_set": [
+        "ischemic in anterolateral leads"
+      ],
+      "gold_set": [
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 77,
+      "question": "Which symptom does this ECG show, myocardial infarction or conduction disturbance?",
+      "gold": [
+        "conduction disturbance"
+      ],
+      "pred": "conduction disturbance",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "conduction disturbance"
+      ],
+      "gold_set": [
+        "conduction disturbance"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 78,
+      "question": "Which symptom does this ECG show, hypertrophy or myocardial infarction?",
+      "gold": [
+        "none"
+      ],
+      "pred": "none",
+      "correct": true,
+      "set_em": 1.0,
+      "set_f1": 1.0,
+      "pred_set": [
+        "none"
+      ],
+      "gold_set": [
+        "none"
+      ],
+      "type": "single-choose"
+    },
+    {
+      "i": 79,
+      "question": "Which form-related symptom does this ECG show, abnormal qrs or non-diagnostic t abnormalities?",
+      "gold": [
+        "abnormal qrs",
+        "non-diagnostic t abnormalities"
+      ],
+      "pred": "abnormal qrs",
+      "correct": true,
+      "set_em": 0.0,
+      "set_f1": 0.6666666666666666,
+      "pred_set": [
+        "abnormal qrs"
+      ],
+      "gold_set": [
+        "abnormal qrs",
+        "non diagnostic t abnormalities"
+      ],
+      "type": "single-choose"
+    }
+  ]
+}
